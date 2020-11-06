@@ -19,3 +19,7 @@
 .site-layout .site-layout-background {
   background: #fff;
 }
+
+.login-provider-button{
+  padding: 10px 20px;
+}

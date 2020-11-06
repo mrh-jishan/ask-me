@@ -5,11 +5,12 @@ import PrivateRoute from "./PrivateRoutes";
 import AppRoute from "./routes/AppRoute";
 import AuthRoute from "./routes/AuthRoute";
 
+
 const App = () => {
   return (
     <Switch>
-      <PrivateRoute path="/secure" component={AppRoute} />
       <Route path="/auth" component={AuthRoute} />
+      <PrivateRoute path="/secure" component={AppRoute} />
       <Redirect to="/auth" from="/" />
     </Switch>
   );
